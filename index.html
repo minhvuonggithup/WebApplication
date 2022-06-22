@@ -6,42 +6,51 @@
     </head>
     <body>
         <style>
-            div {
+            .content {
                 text-align: center;
+                display: inline-block;
+                margin: 35px;
             }
-            .contents {
-                text-align: center;
-                display:inline-block;
-                margin: 20px;
+            .booktitle {
+                margin-bottom: 25px;
             }
             .picture {
                 width: 120px;
                 height: 180px;
                 border-radius: 5px;
+                cursor: pointer;
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+                transition: scale 0.25s;
+            }
+            .picture:hover {
+                scale: 1.1;
+            }
+            .picture:active {
+                scale: 0.9;
             }
         </style>
         <h2 style="text-align:center">Danh mục sách dành cho Web Developer</h2>
-        <div>
-            <div class="contents">
-                <h3><a href="web.html">HTML</a></h3>
+        <div style="text-align: center;">
+            <div class="content">
+                <h3 class="booktitle"><a href="web.html">HTML</a></h3>
                 <a href="web.html">
                     <image src="Images/html.jpg" class="picture"></image>
                 </a>
             </div>
-            <div class="contents">
-                <h3><a href="css.html">CSS</a></h3>
+            <div class="content">
+                <h3 class="booktitle"><a href="css.html">CSS</a></h3>
                 <a href="css.html">
                     <image src="Images/css.jpg" class="picture"></image>
                 </a>
             </div>
-            <div class="contents">
-                <h3><a href="javascript.html">Javascript</a></h3>
+            <div class="content">
+                <h3 class="booktitle"><a href="javascript.html">Javascript</a></h3>
                 <a href="javascript.html">
                     <image src="Images/javascript.jpg" class="picture"></image>
                 </a>
             </div>
-            <div class="contents">
-                <h3><a href="jquery.html">jQuery</a></h3>
+            <div class="content">
+                <h3 class="booktitle"><a href="jquery.html">jQuery</a></h3>
                 <a href="jquery.html">
                     <image src="Images/jQuery.jpg" class="picture"></image>
                 </a>
