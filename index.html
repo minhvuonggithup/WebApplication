@@ -6,13 +6,25 @@
     </head>
     <body>
         <style>
+            .webtitle {
+                text-align: center;
+                color: rgb(255, 255, 255);
+                padding: 1px 40px;
+                background-color: rgb(0, 0, 0);
+            }
             .content {
                 text-align: center;
                 display: inline-block;
                 margin: 35px;
             }
             .booktitle {
+                text-decoration: none;
                 margin-bottom: 25px;
+                letter-spacing: inherit;
+                color: rgb(0, 0, 0);
+            }
+            .booktitle:hover {
+                text-decoration: underline;
             }
             .picture {
                 width: 120px;
@@ -29,28 +41,48 @@
                 scale: 0.9;
             }
         </style>
-        <h2 style="text-align:center">Danh mục sách dành cho Web Developer</h2>
+        <div class="webtitle">
+            <h2>
+                Danh mục sách dành cho Web Developer
+            </h2>
+        </div>
         <div style="text-align: center;">
             <div class="content">
-                <h3 class="booktitle"><a href="web.html">HTML</a></h3>
+                <h3>
+                    <a href="web.html" class="booktitle">
+                        HTML
+                    </a>
+                </h3>
                 <a href="web.html">
                     <image src="Images/html.jpg" class="picture"></image>
                 </a>
             </div>
             <div class="content">
-                <h3 class="booktitle"><a href="css.html">CSS</a></h3>
+                <h3>
+                    <a href="css.html" class="booktitle">
+                        CSS
+                    </a>
+                </h3>
                 <a href="css.html">
                     <image src="Images/css.jpg" class="picture"></image>
                 </a>
             </div>
             <div class="content">
-                <h3 class="booktitle"><a href="javascript.html">Javascript</a></h3>
+                <h3>
+                    <a href="javascript.html" class="booktitle">
+                        Javascript
+                    </a>
+                </h3>
                 <a href="javascript.html">
                     <image src="Images/javascript.jpg" class="picture"></image>
                 </a>
             </div>
             <div class="content">
-                <h3 class="booktitle"><a href="jquery.html">jQuery</a></h3>
+                <h3>
+                    <a href="jquery.html"  class="booktitle">
+                        jQuery
+                    </a>
+                </h3>
                 <a href="jquery.html">
                     <image src="Images/jQuery.jpg" class="picture"></image>
                 </a>
