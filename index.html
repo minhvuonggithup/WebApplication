@@ -4,13 +4,14 @@
         <meta charset="UTF-8">
         <title>Ứng dụng Web</title>
     </head>
-    <body>
+    <body style="background-color:rgb(246, 248, 252)">
         <style>
             .webtitle {
-                text-align: center;
-                color: rgb(255, 255, 255);
-                padding: 1px 40px;
-                background-color: rgb(0, 0, 0);
+                color: rgb(56, 113, 224);
+                font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+                font-weight: 600;
+                font-size: 33px;
+                margin-top: 20px;
             }
             .content {
                 text-align: center;
@@ -18,74 +19,97 @@
                 margin: 35px;
             }
             .booktitle {
+                margin: 25px;
+                padding: 5px 10px;
+                border-radius: 8px;
+                transition: background-color 0.15s, scale 0.15s, opacity 0.15s;
+            }
+            .booktitle:hover {
+                background-color: rgb(213, 226, 250);
+            }
+            .booktitle:active {
+                scale: 0.9;
+                opacity: 0.5;
+            }
+            .bookname {
+                font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+                font-size:large;
+                font-weight: 400;
                 text-decoration: none;
                 margin-bottom: 25px;
                 letter-spacing: inherit;
-                color: rgb(0, 0, 0);
-            }
-            .booktitle:hover {
-                text-decoration: underline;
+                color: rgb(26, 115, 232);
+                transition: color 0.15s;
             }
             .picture {
                 width: 120px;
                 height: 180px;
-                border-radius: 5px;
+                border-radius: 8px;
                 cursor: pointer;
-                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
-                transition: scale 0.25s;
+                /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15); */
+                transition: scale 0.25s, opacity 0.25s;
             }
             .picture:hover {
                 scale: 1.1;
             }
             .picture:active {
                 scale: 0.9;
+                opacity: 0.5;
             }
         </style>
-        <div class="webtitle">
-            <h2>
-                Danh mục sách dành cho Web Developer
-            </h2>
-        </div>
         <div style="text-align: center;">
+            <div class="webtitle">
+                <hr>
+                Danh mục sách dành cho Web Developer
+                <hr>
+            </div>
             <div class="content">
-                <h3>
-                    <a href="web.html" class="booktitle">
+                <div class="booktitle">
+                    <a href="web.html" class="bookname">
                         HTML
                     </a>
-                </h3>
-                <a href="web.html">
-                    <image src="Images/html.jpg" class="picture"></image>
-                </a>
+                </div>
+                <div>
+                    <a href="web.html">
+                        <image src="Images/html.jpg" class="picture"></image>
+                    </a>
+                </div>
             </div>
             <div class="content">
-                <h3>
-                    <a href="css.html" class="booktitle">
+                <div class="booktitle">
+                    <a href="css.html" class="bookname">
                         CSS
                     </a>
-                </h3>
-                <a href="css.html">
-                    <image src="Images/css.jpg" class="picture"></image>
-                </a>
+                </div>
+                <div>
+                    <a href="css.html">
+                        <image src="Images/css.jpg" class="picture"></image>
+                    </a>
+                </div>
             </div>
             <div class="content">
-                <h3>
-                    <a href="javascript.html" class="booktitle">
+                <div class="booktitle">
+                    <a href="javascript.html" class="bookname">
                         Javascript
                     </a>
-                </h3>
-                <a href="javascript.html">
-                    <image src="Images/javascript.jpg" class="picture"></image>
-                </a>
+                </div>
+                <div>
+                    <a href="javascript.html">
+                        <image src="Images/javascript.jpg" class="picture"></image>
+                    </a>
+                </div>
             </div>
             <div class="content">
-                <h3>
-                    <a href="jquery.html"  class="booktitle">
+                <div class="booktitle">
+                    <a href="jquery.html" class="bookname">
                         jQuery
                     </a>
-                </h3>
-                <a href="jquery.html">
-                    <image src="Images/jQuery.jpg" class="picture"></image>
-                </a>
+                </div>
+                <div>
+                    <a href="jquery.html">
+                        <image src="Images/jQuery.jpg" class="picture"></image>
+                    </a>
+                </div>
             </div>
         </div>
     </body>
