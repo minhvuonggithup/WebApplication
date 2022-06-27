@@ -4,6 +4,10 @@
         <meta charset="UTF-8">
         <title>Ứng dụng Web</title>
         <style>
+            body {
+                text-align: center;
+                background-color: rgb(241, 243, 244);
+            }
             .webtitle {
                 color: rgb(67, 68, 68);
                 font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
@@ -12,32 +16,34 @@
                 margin-top: 40px;
             }
             .content {
-                text-align: center;
                 display: inline-block;
-                margin: 35px;
+                margin: 25px;
+            }
+            .book {
+                margin: 25px;
+                transition: scale 0.15s;
+            }
+            .book:active {
+                scale: 0.9;
             }
             .booktitle {
-                margin: 25px;
+                margin: 35px;
                 padding: 5px 10px;
                 border-radius: 8px;
-                transition: background-color 0.15s, scale 0.15s, opacity 0.15s;
-            }
-            .booktitle:hover {
-                background-color: rgb(229, 231, 232);
-            }
-            .booktitle:active {
-                scale: 0.9;
-                opacity: 0.5;
-            }
-            .bookname {
                 font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-                font-size:large;
-                font-weight: 400;
+                font-size: 18px;
                 text-decoration: none;
                 margin-bottom: 25px;
                 letter-spacing: inherit;
-                color: rgb(67, 67, 68);
-                transition: color 0.15s;
+                color: rgb(46, 135, 252);
+                transition:  color 0.15s, background-color 0.15s, opacity 0.15s;
+            }
+            .booktitle:hover {
+                color: rgb(26, 115, 232);
+                background-color: rgb(213, 226, 250);
+            }
+            .booktitle:active {
+                opacity: 0.5;
             }
             .picture {
                 width: 120px;
@@ -57,13 +63,13 @@
         </style>
     </head>
     <body>
-        <div style="text-align: center;">
-            <div class="webtitle">
-                Danh mục sách dành cho Web Developer
-            </div>
+        <div class="webtitle">
+            Danh mục sách dành cho Web Developer
+        </div>
+        <div>
             <div class="content">
-                <div class="booktitle">
-                    <a href="web.html" class="bookname">
+                <div class="book">
+                    <a href="web.html" class="booktitle">
                         HTML
                     </a>
                 </div>
@@ -74,8 +80,8 @@
                 </div>
             </div>
             <div class="content">
-                <div class="booktitle">
-                    <a href="css.html" class="bookname">
+                <div class="book">
+                    <a href="css.html" class="booktitle">
                         CSS
                     </a>
                 </div>
@@ -86,8 +92,8 @@
                 </div>
             </div>
             <div class="content">
-                <div class="booktitle">
-                    <a href="javascript.html" class="bookname">
+                <div class="book">
+                    <a href="javascript.html" class="booktitle">
                         Javascript
                     </a>
                 </div>
@@ -98,8 +104,8 @@
                 </div>
             </div>
             <div class="content">
-                <div class="booktitle">
-                    <a href="jquery.html" class="bookname">
+                <div class="book">
+                    <a href="jquery.html" class="booktitle">
                         jQuery
                     </a>
                 </div>
