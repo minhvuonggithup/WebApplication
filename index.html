@@ -3,118 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <title>Ứng dụng Web</title>
-        <style>
-            body {
-                text-align: center;
-                background-color: rgb(241, 243, 244);
-            }
-            .webtitle {
-                color: rgb(67, 68, 68);
-                font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-                font-weight: 600;
-                font-size: 33px;
-                margin-top: 40px;
-            }
-            .content {
-                display: inline-block;
-                margin: 25px;
-            }
-            .book {
-                margin: 25px;
-                transition: scale 0.15s;
-            }
-            .book:active {
-                scale: 0.9;
-            }
-            .booktitle {
-                margin: 35px;
-                padding: 5px 10px;
-                border-radius: 8px;
-                font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-                font-size: 18px;
-                text-decoration: none;
-                margin-bottom: 25px;
-                letter-spacing: inherit;
-                color: rgb(46, 135, 252);
-                transition:  color 0.15s, background-color 0.15s, opacity 0.15s;
-            }
-            .booktitle:hover {
-                color: rgb(26, 115, 232);
-                background-color: rgb(213, 226, 250);
-            }
-            .booktitle:active {
-                opacity: 0.5;
-            }
-            .picture {
-                width: 120px;
-                height: 180px;
-                border-radius: 8px;
-                cursor: pointer;
-                /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15); */
-                transition: scale 0.25s, opacity 0.25s;
-            }
-            .picture:hover {
-                scale: 1.1;
-            }
-            .picture:active {
-                scale: 0.9;
-                opacity: 0.5;
-            }
-        </style>
     </head>
     <body>
-        <div class="webtitle">
-            Danh mục sách dành cho Web Developer
-        </div>
-        <div>
-            <div class="content">
-                <div class="book">
-                    <a href="web.html" class="booktitle">
-                        HTML
-                    </a>
-                </div>
-                <div>
-                    <a href="web.html">
-                        <image src="Images/html.jpg" class="picture"></image>
-                    </a>
-                </div>
+        <h2 style="text-align:center">Danh mục sách</h2>
+        <div style="text-align:center;">
+            <div style="display:inline-block;">
+                <h3><a href="web.html">HTML</a></h3>
+                <a href="web.html">
+                    <image src="Images/html.jpg" width="120px" height="180px"></image>
+                </a>
             </div>
-            <div class="content">
-                <div class="book">
-                    <a href="css.html" class="booktitle">
-                        CSS
-                    </a>
-                </div>
-                <div>
-                    <a href="css.html">
-                        <image src="Images/css.jpg" class="picture"></image>
-                    </a>
-                </div>
+            <div style="display:inline-block;">
+                <h3><a href="css.html">CSS</a></h3>
+                <a href="css.html">
+                    <image src="Images/css.jpg" width="120px" height="180px"></image>
+                </a>
             </div>
-            <div class="content">
-                <div class="book">
-                    <a href="javascript.html" class="booktitle">
-                        Javascript
-                    </a>
-                </div>
-                <div>
-                    <a href="javascript.html">
-                        <image src="Images/javascript.jpg" class="picture"></image>
-                    </a>
-                </div>
+            <div style="display:inline-block;">
+                <h3><a href="javascript.html">Javascript</a></h3>
+                <a href="javascript.html">
+                    <image src="Images/javascript.jpg" width="120px" height="180px"></image>
+                </a>
             </div>
-            <div class="content">
-                <div class="book">
-                    <a href="jquery.html" class="booktitle">
-                        jQuery
-                    </a>
-                </div>
-                <div>
-                    <a href="jquery.html">
-                        <image src="Images/jQuery.jpg" class="picture"></image>
-                    </a>
-                </div>
+            <div style="display:inline-block;">
+                <h3><a href="jquery.html">jQuery</a></h3>
+                <a href="jquery.html">
+                    <image src="Images/jQuery.jpg" width="120px" height="180px"></image>
+                </a>
             </div>
         </div>
     </body>
-</html>
+</html> 
