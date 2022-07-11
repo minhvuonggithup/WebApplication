@@ -4,30 +4,34 @@
         <meta charset="UTF-8">
         <title>Test - Ứng dụng Web</title>
         <style>
-            body {
-                text-align: center;
-                background-color: rgb(241, 243, 244);
-            }
-            .webtitle {
+            .web-header {
                 color: rgb(67, 68, 68);
                 font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+                font-size: 1.8em;
                 font-weight: 600;
-                font-size: 33px;
-                margin-top: 40px;
+                margin: 20px;
+                text-align: center;
             }
-            .content {
+            .web-body {
+                text-align: center;
+            }
+            .book-list {
+                margin: 0px auto;
                 display: inline-block;
-                margin: 25px;
+                margin: 20px;
             }
-            .book {
-                margin: 25px;
+            .book-image {
+                margin: 10px;
+            }
+            .book-name {
+                margin: 20px auto;
                 transition: transform 0.15s;
             }
-            .book:active {
+            .book-name:active {
                 transform: scale(0.9);
             }
-            .booktitle {
-                margin: 35px;
+            .book-title {
+                margin: 0px auto;
                 padding: 5px 10px;
                 border-radius: 8px;
                 font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
@@ -38,11 +42,11 @@
                 color: rgb(46, 135, 252);
                 transition:  color 0.15s, background-color 0.15s, opacity 0.15s;
             }
-            .booktitle:hover {
+            .book-title:hover {
                 color: rgb(26, 115, 232);
                 background-color: rgb(213, 226, 250);
             }
-            .booktitle:active {
+            .book-title:active {
                 opacity: 0.5;
             }
             .picture {
@@ -50,7 +54,6 @@
                 height: 180px;
                 border-radius: 8px;
                 cursor: pointer;
-                /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15); */
                 transition: transform 0.25s, opacity 0.25s;
             }
             .picture:hover {
@@ -63,55 +66,55 @@
         </style>
     </head>
     <body>
-        <div class="webtitle">
+        <div class="web-header">
             Danh mục sách dành cho Web Developer
         </div>
-        <div>
-            <div class="content">
-                <div class="book">
-                    <a href="web.html" class="booktitle">
+        <div class="web-body">
+            <div class="book-list">
+                <div class="book-image">
+                    <a href="web.html">
+                        <image src="Images/html.jpg" class="picture" alt="HTML book"></image>
+                    </a>
+                </div>
+                <div class="book-name">
+                    <a href="web.html" class="book-title">
                         HTML
                     </a>
                 </div>
-                <div>
-                    <a href="web.html">
-                        <image src="Images/html.jpg" class="picture"></image>
+            </div>
+            <div class="book-list">
+                <div class="book-image">
+                    <a href="css.html">
+                        <image src="Images/css.jpg" class="picture" alt="CSS book"></image>
                     </a>
                 </div>
-            </div>
-            <div class="content">
-                <div class="book">
-                    <a href="css.html" class="booktitle">
+                <div class="book-name">
+                    <a href="css.html" class="book-title">
                         CSS
                     </a>
                 </div>
-                <div>
-                    <a href="css.html">
-                        <image src="Images/css.jpg" class="picture"></image>
+            </div>
+            <div class="book-list">
+                <div class="book-image">
+                    <a href="javascript.html">
+                        <image src="Images/javascript.jpg" class="picture"  alt="Javascript book"></image>
                     </a>
                 </div>
-            </div>
-            <div class="content">
-                <div class="book">
-                    <a href="javascript.html" class="booktitle">
+                <div class="book-name">
+                    <a href="javascript.html" class="book-title">
                         Javascript
                     </a>
                 </div>
-                <div>
-                    <a href="javascript.html">
-                        <image src="Images/javascript.jpg" class="picture"></image>
-                    </a>
-                </div>
             </div>
-            <div class="content">
-                <div class="book">
-                    <a href="jquery.html" class="booktitle">
-                        jQuery
+            <div class="book-list">
+                <div class="book-image">
+                    <a href="jquery.html">
+                        <image src="Images/jQuery.jpg" class="picture" alt="jQuery book"></image>
                     </a>
                 </div>
-                <div>
-                    <a href="jquery.html">
-                        <image src="Images/jQuery.jpg" class="picture"></image>
+                <div class="book-name">
+                    <a href="jquery.html" class="book-title">
+                        jQuery
                     </a>
                 </div>
             </div>
