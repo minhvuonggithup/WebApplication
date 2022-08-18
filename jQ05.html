@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 05</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        img {
+            width: 200px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $(document).ready(function(e) {
+            $("img")
+            .mouseover(function() {
+                $(this).attr("src", "Images/chim.jpg")
+                    .animate({
+                        height: "+=200px",
+                        width: "+=200px",
+                    })
+            })
+            .mouseout(function() {
+                $(this).attr("src", "Images/ga.jpg")
+                    .animate({
+                        height: "-=200px",
+                        width: "-=200px",
+                    })
+            })
+        })
+    </script>
+    <img src="Images/ga.jpg">
+</body>
+</html>
